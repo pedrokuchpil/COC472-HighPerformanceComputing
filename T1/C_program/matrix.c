@@ -40,7 +40,7 @@ void freeMatrix(int **matrix, int size)
     free(matrix);
 }
 
-int *multiplication_IJ(int size, int **matrix, int *vector)
+int *multiplicationIJ(int size, int **matrix, int *vector)
 {
     int *result = (int *)malloc((size + 1) * sizeof(int *));
     for (int i = 0; i < size; i++)
@@ -59,7 +59,7 @@ int *multiplication_IJ(int size, int **matrix, int *vector)
     return result;
 }
 
-int *multiplication_JI(int size, int **matrix, int *vector)
+int *multiplicationJI(int size, int **matrix, int *vector)
 {
     int *result = (int *)malloc((size + 1) * sizeof(int *));
     for (int i = 0; i < size; i++)
@@ -99,14 +99,14 @@ int main (int argc, char *argv[])
     if (type == 0)
     {
         gettimeofday(&t1, NULL);
-        result = multiplication_IJ(size, matrix, vector);
+        result = multiplicationIJ(size, matrix, vector);
         gettimeofday(&t2, NULL);
     }
 
     else 
     {
         gettimeofday(&t1, NULL);
-        result = multiplication_JI(size, matrix, vector);
+        result = multiplicationJI(size, matrix, vector);
         gettimeofday(&t2, NULL);
     }
     
