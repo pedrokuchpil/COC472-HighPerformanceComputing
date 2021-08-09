@@ -1,1 +1,1 @@
-COC472
+Para executar os programas, entre na pasta específica de cada um e dê o comando run.sh
