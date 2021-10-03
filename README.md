@@ -1,1 +1,1 @@
-Para executar os programas, entre na pasta específica de cada um e dê o comando ./run.sh
+Repositório de trabalhos práticos da disciplina de Computação de Alto Desempenho - COC472
